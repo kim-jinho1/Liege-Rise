@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="Container" style="flex-grow: 1; flex-direction: column;">
+        <uie:ObjectField label="타일맵" name="TileMapField"/>
+        <uie:ObjectField label="타일" name="TileField" type="UnityEngine.Tilemaps.TileBase, UnityEngine.TilemapModule"/>
+        <ui:VisualElement name="SizeContainer" style="flex-grow: 0; flex-direction: row;">
+            <ui:IntegerField label="가로 크기" value="42" name="SizeX"/>
+            <ui:IntegerField label="세로 크기" value="42" name="SizeY"/>
+        </ui:VisualElement>
+        <ui:Button text="타일 생성" name="CreateButton"/>
+    </ui:VisualElement>
+</ui:UXML>
